@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./asset/css/layout.css" />
+        <link rel="stylesheet" href="./asset/css/main.css" />
+    </head>
+    <body>
+        <!-- 접근성을 위한 네비게이션 -->
+        <div id="skipnav">
+            <a href="#main">본문내용 바로가기</a>
+        </div>
+
+        <!-- 최소너비 보장 -->
+        <div class="wrapper">
+            <header class="header">
+                <div class="group-sraech">
+                    <h1 class="logo">
+                        <a href="">
+                            <span class="blind">네이버로고</span>
+                            <img src="./asset/img/logo.png" alt="" />
+                        </a>
+                    </h1>
+
+                    <form action="" method="get">
+                        <fieldset>
+                            <legend class="blind">검색</legend>
+                        </fieldset>
+                        <input class="input-text" type="text" />
+                        <button class="btn-keyboard">
+                            <span class="blind">키보드</span>
+                        </button>
+                        <button class="btn-help">
+                            <span class="blind">도움말</span>
+                        </button>
+                        <button class="btn-submit">
+                            <span class="blind">검색</span>
+                        </button>
+                    </form>
+                </div>
+                <nav class="gnb">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="">
+                                <i class="ico-mail"></i>
+                                <span class="name">메일</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">
+                                <i class="ico-cafe"></i>
+                                <span class="name">카페</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">
+                                <i class="ico-cafe"></i>
+                                <span class="name">카페</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">
+                                <i class="ico-cafe"></i>
+                                <span class="name">카페</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">
+                                <i class="ico-cafe"></i>
+                                <span class="name">카페</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">
+                                <i class="ico-cafe"></i>
+                                <span class="name">카페</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">
+                                <i class="ico-cafe"></i>
+                                <span class="name">카페</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">
+                                <i class="ico-cafe"></i>
+                                <span class="name">카페</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">
+                                <i class="ico-cafe"></i>
+                                <span class="name">카페</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">
+                                <i class="ico-cafe"></i>
+                                <span class="name">카페</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="">
+                                <i class="ico-cafe"></i>
+                                <span class="name">카페</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="util-area left">
+                    <button class="btn-menu" aria-expanded="false">
+                        <span class="blind">확장메뉴</span>
+                    </button>
+                    <a href="" class="btn-pay">
+                        <span class="blind">네이버페이</span>
+                    </a>
+                </div>
+
+                <div class="util-area right">
+                    <button class="btn-talk" aria-expanded="false">
+                        <span class="blind">네이버톡</span>
+                    </button>
+                    <button class="btn-alert" aria-expanded="false">
+                        <span class="blind">알림 및 혜택</span>
+                    </button>
+                </div>
+            </header>
+
+            <main class="container" id="main">
+                <!-- 영역을 단순히 나누는 것 - div -->
+                <div class="col-left">
+                    <!-- 관련없음 -->
+                    <!-- <aside></aside> -->
+
+                    <aside class="ad-aside">
+                        <a href="">
+                            <img src="./asset/img/ad1.jpg" alt="" />
+                        </a>
+                    </aside>
+
+                    <section class="sc-news">
+                        <h2 class="blin">뉴스</h2>
+
+                        <div class="group-header">
+                            <ul role="tablist">
+                                <li class="title">
+                                    <button role="tab" aria-selected="true">
+                                        뉴스
+                                    </button>
+                                </li>
+                                <li class="title">
+                                    <button role="tab" aria-selected="false">
+                                        언론사편집
+                                    </button>
+                                </li>
+                                <li class="sort">
+                                    <button role="tab" aria-selected="false">
+                                        엔터
+                                    </button>
+                                </li>
+                                <li class="sort">
+                                    <button role="tab" aria-selected="false">
+                                        스포츠
+                                    </button>
+                                </li>
+                                <li class="sort">
+                                    <button role="tab" aria-selected="false">
+                                        경제
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="group-issue">
+                            <div class="isuue-area">
+                                <button class="btn-all">전체언론사</button>
+                                <a href="" class="link-media">연합뉴스</a>
+                                <a href="" class="link-issue">내용...</a>
+                            </div>
+
+                            <div class="news-area">
+                                <a href="">뉴스스탠드</a>
+                                <a href="">뉴스홈</a>
+                            </div>
+                        </div>
+                        <div class="group-media">
+                            <ul class="media-list">
+                                <li class="media-item">
+                                    <a href="" class="media">
+                                        <img src="" alt="한국일보" />
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <i class="vt-line vt1"></i>
+                            <i class="vt-line vt2"></i>
+                            <i class="vt-line vt3"></i>
+                            <i class="vt-line vt4"></i>
+                            <i class="vt-line vt5"></i>
+
+                            <i class="hr-line hr1"></i>
+                            <i class="hr-line hr2"></i>
+                            <i class="hr-line hr3"></i>
+                            <i class="hr-line hr4"></i>
+                            <i class="hr-line hr5"></i>
+                        </div>
+                        <div class="group-control">
+                            <div class="control-area">
+                                <button class="btn-prev">
+                                    <span class="blind">이전슬라이드</span>
+                                </button>
+
+                                <div class="more-box">
+                                    <span class="media">언론사</span> 더보기
+                                    <span class="current"
+                                        >1<span class="blind"
+                                            >페이지</span
+                                        ></span
+                                    >
+                                    <span class="total"
+                                        ><span class="blind">전체</span>/4</span
+                                    >
+                                </div>
+
+                                <button class="btn-next">
+                                    <span class="blind">다음슬라이드</span>
+                                </button>
+                            </div>
+                            <div class="set-area" role="radiogroup">
+                                <button
+                                    class="btn-list"
+                                    role="radio"
+                                    aria-checked="true"
+                                >
+                                    <span class="blind">리스트형</span>
+                                </button>
+                                <button
+                                    class="btn-thumb"
+                                    role="radio"
+                                    aria-checked="false"
+                                >
+                                    <span class="blind">썸네일형</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="set-area" role="radiogroup">
+                            <button
+                                class="btn-list"
+                                role="radio"
+                                aria-checked="true"
+                            >
+                                /
+                                <span class="blind">리스트형</span>
+                            </button>
+                            <button
+                                class="btn-thumb"
+                                role="radio"
+                                aria-checked="false"
+                            >
+                                <span class="blind" role="radio">
+                                    <h2 class="blin">로그인</h2>
+                                    <p class="login-msg">
+                                        네이버를 더 안전하고 편리하게 이용하세요
+                                    </p>
+                                    <a href="" class="link-login">
+                                        <span class="blind">네이버</span>
+                                        로그인
+                                    </a>
+
+                                    <div class="sub-area">
+                                        <a href="">아이디찾기</a>
+                                        <a href="">비번찾기</a>
+                                        <a href="">회원가입</a>
+                                    </div>
+                                </span>
+                            </button>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="col-right">
+                    <section class="sc-login">
+                        <h2 class="blin">로그인</h2>
+                    </section>
+
+                    <aside class="ad-aside"></aside>
+                </div>
+            </main>
+            <footer class="footer"></footer>
+        </div>
+    </body>
+</html>

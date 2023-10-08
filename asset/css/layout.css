@@ -1,0 +1,400 @@
+@import "./reset.css";
+@import "./common.css";
+
+/* layout.css 는 header. footer 태그만  */
+
+.header .header-inner {
+    position: relative;
+    width: 1280px;
+    padding-top: 64px;
+    margin: 0px auto;
+    margin: 0 auto;
+    height: 262px;
+}
+.header .group-search {
+    display: flex;
+    position: absolute;
+    top: 64px;
+    left: 50%;
+    z-index: 10;
+    width: 706px;
+    border: 1px solid #03c75a;
+    border-radius: 33px;
+    background-color: #fff;
+
+    transform: translateX(-50%);
+}
+
+.header .group-search .logo a {
+    padding-left: 10px;
+    display: block;
+    margin-right: 12px;
+}
+.header .group-search .logo img {
+    width: 58px;
+    height: 58px;
+}
+
+/* header form  - after,befor줄거임*/
+
+.header form {
+    flex: 1;
+    height: 100%;
+}
+.header fieldset {
+    display: flex;
+    height: 100%;
+}
+.header .input-text {
+    width: 480px;
+    color: #000;
+    position: relative;
+    padding: 17px 0;
+    font-size: 2rem;
+    line-height: 24px;
+    font-weight: bold;
+    margin-right: auto;
+    outline: 0;
+}
+
+/* beofr after - common에다 작성*/
+
+.header .group-search [class*="btn-"] {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.header .group-search .btn-keyboard {
+    padding: 0 3px;
+}
+.header .group-search .btn-help {
+    padding: 0 6px;
+}
+.header .group-search .btn-submit {
+    padding: 0 27px 0 10px;
+}
+.header .group-search .btn-keyboard::before {
+    width: 24px;
+    height: 16px;
+    background-position: -91px -308px;
+}
+.header .group-search .btn-help::before {
+    width: 10px;
+    height: 6px;
+    background-position: -318px -247px;
+}
+.header .group-search .btn-submit::before {
+    width: 25px;
+    height: 25px;
+    background-position: -295px -329px;
+}
+
+.header .gnb {
+    position: relative;
+    width: 676px;
+    margin: 72px auto 0;
+}
+.header .gnb .nav-list {
+    display: flex;
+    gap: 4px;
+}
+.header .gnb .nav-item {
+    flex: 1;
+}
+.header .gnb a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.header .gnb [class*="ico-"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 48px;
+    height: 48px;
+}
+
+.header .gnb [class*="ico-"]::before {
+    position: absolute;
+    top: -2px;
+    left: -3px;
+    width: 54px;
+    background-position: 0px -128px;
+    height: 54px;
+}
+
+.header .gnb [class*="ico-"]::after {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+}
+.header .gnb .ico-mail::after {
+    background-position: -250px -90px;
+}
+.header .gnb .ico-cafe::after {
+    background-position: -250px -0px;
+}
+.header .gnb .ico-blog::after {
+    background-position: -201px -98px;
+}
+.header .gnb .ico-shopping::after {
+    background-position: -90px -209px;
+}
+.header .gnb .ico-news::after {
+    background-position: -0px -209px;
+}
+.header .gnb .ico-stock::after {
+    background-position: -180px -209px;
+}
+.header .gnb .ico-estate::after {
+    background-position: -45px -209px;
+}
+.header .gnb .ico-map::after {
+    background-position: -225px -209px;
+}
+.header .gnb .ico-webtoon::after {
+    background-position: -250px -90px;
+}
+
+.header .util-area {
+    display: flex;
+    position: absolute;
+    top: 18px;
+}
+.header .util-area.left {
+    left: -10px;
+}
+.header .util-area.right {
+    right: -10px;
+}
+.header .util-area [class*="btn-"] {
+    padding: 10px;
+}
+
+.header .util-area .btn-pay {
+    padding: 7px;
+}
+
+.header .util-area [class*="btn-"]::after {
+    width: 26px;
+    height: 26px;
+}
+.header .util-area .btn-pay::after {
+    width: 32px;
+    height: 32px;
+    background-position: -295px -177px;
+}
+.header .util-area .btn-menu::after {
+    background-position: -82px -329px;
+}
+.header .util-area .btn-talk::after {
+    background-position: -190px -329px;
+}
+.header .util-area .btn-alert::after {
+    background-position: -136px -329px;
+}
+
+/* footer */
+
+.footer {
+    background-color: #f5f6f7;
+}
+.footer .footer-inner {
+    width: 1280px;
+    margin: 0 auto;
+    padding-bottom: 78px;
+    font-size: 1.3rem;
+}
+.footer .nbanner-area {
+    border-bottom: 1px solid #ebebeb;
+    overflow: hidden;
+    padding: 30px 0;
+    display: flex;
+    gap: 21px;
+}
+.footer .nbanner-area .public {
+    display: flex;
+    color: #202020;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: left;
+    position: relative;
+    width: 410px;
+    height: 100px;
+}
+.footer .nbanner-area .right-text {
+    padding: 5px 3px 0 18px;
+}
+.footer .nbanner-area .public img {
+    width: 160px;
+    height: 100px;
+    border-radius: 6px;
+}
+.footer .nbanner-area .public em {
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: -0.25px;
+    color: #fff;
+    background-color: #a0adb2;
+    vertical-align: top;
+}
+.footer .nbanner-area .public strong {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: -0.25px;
+    color: #222122;
+}
+.footer .nbanner-area .public p {
+    margin-top: 6px;
+
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: -0.25px;
+    color: #545454;
+}
+
+.footer .notice-area {
+    border-bottom: 1px solid #ebebeb;
+    padding: 21px 0;
+    line-height: 17px;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.footer .notice-area .link-service {
+    display: flex;
+    align-items: center;
+}
+.footer .notice-area .link-service::after {
+    background-position: -426px -37px;
+    width: 8px;
+    height: 12px;
+    margin: 0 0 0 10px;
+}
+
+.footer .aside-area {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .aside-area .partner-box + .partner-box {
+    margin-top: 10px;
+}
+.footer .aside-area .partner-box {
+    line-height: 20px;
+    color: #404040;
+    display: flex;
+}
+.footer .aside-area .partner-box h3 {
+    font-weight: 700;
+    width: 87px;
+    padding-right: 23px;
+}
+
+.footer .aside-area .partner-box .link-partner + .link-partner::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background-color: #d3d5d7;
+    margin: 0 16px;
+    vertical-align: -1px;
+}
+
+.service-box-wrap {
+    padding: 36px 0 34px;
+    gap: 61px;
+    display: flex;
+}
+.service-box-wrap .service-box {
+    display: flex;
+}
+
+.service-box-wrap .service-left strong {
+    display: block;
+    padding-top: 5px;
+}
+.service-box-wrap .service-left span {
+    color: #404040;
+    display: block;
+    padding-top: 5px;
+}
+
+.service-box-wrap .service-right img {
+    margin-left: 34px;
+    width: 48px;
+    height: 48px;
+}
+
+.footer .corp-area {
+    display: flex;
+    margin: 0px auto;
+    width: 690px;
+    padding-top: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.footer .corp-area .corp-list {
+    display: flex;
+    margin-right: 23px;
+}
+.footer .corp-area .corp-item + .corp-item::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background-color: #d3d5d7;
+    margin: 0 16px;
+    vertical-align: -1px;
+}
+.footer .corp-area .addr {
+    display: inline-block;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+/* 오른쪽 하단 버튼 */
+.set-link {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 1;
+    gap: 10px;
+    display: flex;
+}
+.set-link .link-top,
+.set-link .link-setting {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #dadcdf, 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+    vertical-align: top;
+}
+.set-link .link-top::before {
+    background-position: -346px -329px;
+}
+
+.set-link .link-setting::before {
+    background-position: -274px -308px;
+}
+.set-link [class*="link-"]::before {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
